@@ -1,0 +1,94 @@
+.main {
+  text-align: center;
+  padding: 60px 0;
+  margin: 0 auto;
+
+  @media (max-width: 870px) {
+    padding: 20px 0;
+  }
+
+  &__title {
+    font-family: 'FuturaFuturisC-Bold', sans-serif;
+    font-size: 45px;
+    line-height: 1;
+    color: #111111;
+    margin-bottom: 25px;
+
+    @media (max-width: 480px) {
+      font-size: 35px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 1.09;
+    color: #030303;
+    margin-bottom: 42px;
+  }
+
+  &__list {
+    padding: 44px;
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    align-items: center;
+    justify-content: center;
+    gap: 32px 42px;
+
+    @media (max-width: 1340px) {
+      grid-template-columns: repeat(2, 370px);
+    }
+
+    @media (max-width: 870px) {
+      grid-template-columns: 370px;
+      padding: 20px;
+    }
+
+    @media (max-width: 480px) {
+      grid-template-columns: 280px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 23px 60px;
+    background-color: #fff;
+    background-image: url('../img/bg-card.svg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @media (max-width: 480px) {
+      padding: 25px;
+    }
+  }
+
+  &__img {
+    width: 157px;
+    height: 163px;
+    margin-bottom: 40px;
+  }
+
+  &__title-text {
+    font-family: 'FuturaFuturisC-Bold', sans-serif;
+    font-size: 20px;
+    color: #2a336c;
+    margin-bottom: 15px;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.1;
+    color: #555555;
+    width: 305px;
+
+    @media (max-width: 480px) {
+      font-size: 18px;
+      width: 250px;
+    }
+  }
+}

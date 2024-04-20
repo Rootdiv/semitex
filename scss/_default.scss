@@ -1,0 +1,65 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+fieldset {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+body {
+  font-family: 'FuturaBookC', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.23;
+  background-color: #f2f2f4;
+  min-width: 320px;
+}
+
+.container {
+  margin: 0 auto;
+  @media (max-width: 1440px) {
+    padding: 0 40px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0 20px;
+  }
+}
