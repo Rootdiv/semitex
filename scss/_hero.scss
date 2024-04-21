@@ -1,9 +1,9 @@
 .hero {
   position: relative;
   background-color: #07086c;
-  // background-image: url('../img/bg-waves.svg');
+  background-image: url('../img/bg-waves.svg');
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   color: #ffffff;
   min-height: 850px;
 
@@ -11,12 +11,12 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -2px;
     width: 100%;
     height: 80px;
     background-image: url('../img/bg-wave.svg');
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 
     @media (max-width: 480px) {
       height: 60px;
